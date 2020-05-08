@@ -9,8 +9,8 @@ const pages = [
             <animated.div className="a-page" style={{ ...style }}>
                 <Conversation
                     isMuted
-                    title="First Conversation"
-                    description="This is the first conversation"
+                    title="Pizza Toppings"
+                    description="Does pineapple belong on pizza?"
                 />
             </animated.div>
         );
@@ -19,8 +19,8 @@ const pages = [
         return (
             <animated.div className="a-page" style={{ ...style }}>
                 <Conversation
-                    title="Second Conversation"
-                    description="This is the second conversation"
+                    title="Ohayō Gozaimasu!"
+                    description="Practice your Japanese language skills. Ganbatte!"
                 />
             </animated.div>
         );
@@ -30,8 +30,18 @@ const pages = [
             <animated.div className="a-page" style={{ ...style }}>
                 <Conversation
                     isMuted
-                    title="Third Conversation"
-                    description="This is the third conversation"
+                    title="Flame of Thrones"
+                    description="Pontificate at length about how GoT ended."
+                />
+            </animated.div>
+        );
+    },
+    ({ style }) => {
+        return (
+            <animated.div className="a-page" style={{ ...style }}>
+                <Conversation
+                    title="Flying Solo"
+                    description="Share your travel tips, recommended destinations, and more!"
                 />
             </animated.div>
         );
@@ -50,7 +60,7 @@ export default function Pages() {
         const interval = setInterval(() => {
             const newIndex = (index + 1) % pages.length;
             set(newIndex)
-        }, 2000);
+        }, 3500);
 
         return () => clearInterval(interval);
     });

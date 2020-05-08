@@ -7,6 +7,14 @@
     padding: 0.5em 0.5em 0;
 }
 
+.conversation-wrapper > h1 {
+    margin-bottom: 0;
+}
+
+.conversation-wrapper > p {
+    margin: 8px 0;
+}
+
 .bubble-row {
     display: flex;
     flex-direction: row;
