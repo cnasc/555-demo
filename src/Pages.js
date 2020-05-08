@@ -31,7 +31,7 @@ const pages = [
                 <Conversation
                     isMuted
                     title="Flame of Thrones"
-                    description="Pontificate at length about how GoT ended."
+                    description="Let's talk about how GoT ended."
                 />
             </animated.div>
         );
