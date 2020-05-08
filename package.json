@@ -1,8 +1,10 @@
 {
-  "name": "better-555-mockups",
+  "name": "555-demo",
   "version": "0.1.0",
+  "homepage": "https://cnasc.github.io/555-demo",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
@@ -10,6 +12,8 @@
     "react-spring": "^8.0.27"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
