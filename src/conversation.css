@@ -1,25 +1,31 @@
 .conversation-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
     color: whitesmoke;
     padding: 0.5em 0.5em 0;
 }
 
-.conversation-wrapper > h1 {
+.conversation-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conversation-wrapper h1 {
     margin-bottom: 0;
 }
 
-.conversation-wrapper > p {
+.conversation-wrapper p {
     margin: 8px 0;
 }
 
 .bubble-row {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-evenly;
-    margin: 2em 0;
 }
 
 .icon {
@@ -67,4 +73,5 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex: 1;
+    width: 100%;
 }
