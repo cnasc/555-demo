@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Pages from './Pages';
 import './index.css';
-import App from './App';
+import './html5-device-mockups/dist/device-mockups.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="device-wrapper">
+      <div className="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+        <div className="screen">
+          <div className="gradient-background">
+            <Pages />
+          </div>
+        </div>
+      </div>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

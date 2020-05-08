@@ -1,0 +1,62 @@
+.conversation-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    color: whitesmoke;
+    padding: 0.5em 0.5em 0;
+}
+
+.bubble-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2em 0;
+}
+
+.icon {
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.green {
+    background-color: rgb(13, 190, 138);
+    border: thin rgb(13, 190, 138) solid;
+}
+
+.orange {
+    background-color: rgb(235, 195, 35);
+    border: thin rgb(235, 195, 35) solid;
+}
+
+.red {
+    background-color: rgb(246, 4, 28);
+    border: thin rgb(246, 4, 28) solid;
+}
+
+.disabled-icon {
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    border: thin whitesmoke solid;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.icon-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1;
+}

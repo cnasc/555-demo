@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gradient-background {
+background: linear-gradient(147deg, rgba(54,22,55,1) 0%, rgba(148,114,184,1) 100%);  
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  color: whitesmoke;
+}
